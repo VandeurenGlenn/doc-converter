@@ -1,0 +1,23 @@
+{
+  "name": "doc-converter",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "VandeurenGlenn <vandeurneglenn@gmail.com>",
+    "WardJanssen <wardjanssen1968@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.6.1",
+    "file-input": "vandeurenglenn/file-input#~1.1.1",
+    "paper-icon-button": "~1.1.2",
+    "iron-iconset-svg": "~1.0.9"
+  }
+}

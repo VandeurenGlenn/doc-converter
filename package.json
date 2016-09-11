@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "electron": "^1.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "serve": "electron app/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "doc-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "xlsx-to-json": "^0.2.4",
+    "xlsx2json": "0.0.8",
+    "xml-to-json": "^0.1.1"
+  }
+}

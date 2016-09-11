@@ -1,0 +1,66 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module id="doc-toast">
+  <template>
+    <style>
+      :host {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        will-change: opacity;
+        transition: opacity 0.16ms ease-out;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(-100%);
+        background: #FFF;
+      }
+      :host([opened]) {
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 0.16ms ease-in;
+        transform: translateY(0);
+      }
+      .flex {
+        flex: 1;
+        width: 100%;
+      }
+    </style>
+
+    [[text]]<span class="flex"></span><span class="ok">Ok</span>
+  </template>
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'doc-toast',
+
+        properties: {
+          text: String,
+
+          opened: {
+            type: Boolean,
+            value: false,
+            reflectToAttribute: true
+          }
+        },
+
+        show: function(text) {
+          if (text) {
+            this.text = text;
+          }
+          this.opened = true;
+          this.async(() => {
+            this.close();
+          }, 5000);
+        },
+
+        close: function() {
+          this.opened = false;
+        }
+      });
+    })();
+  </script>
+</dom-module>

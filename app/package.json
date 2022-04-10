@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "xlsx-to-json": "^0.2.4",
-    "xlsx2json": "0.0.8",
+    "xlsx2json": "1.0.0",
     "xml-to-json": "^0.1.1"
   }
 }

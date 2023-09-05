@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "electron": "^16.2.0"
+    "electron": "^22.3.23"
   },
   "devDependencies": {},
   "scripts": {
